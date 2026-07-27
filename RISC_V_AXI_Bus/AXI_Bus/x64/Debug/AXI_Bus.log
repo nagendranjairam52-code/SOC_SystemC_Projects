@@ -1,0 +1,1819 @@
+﻿  AXI_Bus.cpp
+  Cpu.cpp
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\AXI_Bus.cpp(29,28): warning C4805: '==': unsafe mix of type 'const unsigned char' and type 'bool' in operation
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\AXI_Bus.cpp(49,29): warning C4805: '==': unsafe mix of type 'const unsigned char' and type 'bool' in operation
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(292,29): error C2678: binary '==': no operator found which takes a left-hand operand of type 'T' (or there is no acceptable conversion)
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(292,29): error C2678:         with
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(292,29): error C2678:         [
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(292,29): error C2678:             T=cpu_trans
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(292,29): error C2678:         ]
+  (compiling source file 'AXI_Bus.cpp')
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\kernel\sc_process_handle.h(155,13):
+      could be 'bool sc_core::operator ==(const sc_core::sc_process_handle &,const sc_core::sc_process_handle &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(292,29):
+          'bool sc_core::operator ==(const sc_core::sc_process_handle &,const sc_core::sc_process_handle &)': cannot convert argument 1 from 'T' to 'const sc_core::sc_process_handle &'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(292,29):
+              Reason: cannot convert from 'T' to 'const sc_core::sc_process_handle'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(292,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(292,29):
+      while trying to match the argument list '(T, const T)'
+          with
+          [
+              T=cpu_trans
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(292,29):
+      the template instantiation context (the oldest one first) is
+          E:\My_Stuff\prep\systemc_projects\AXI_Bus\Interface.hpp(66,22):
+          see reference to class template instantiation 'sc_core::sc_signal<cpu_trans,sc_core::SC_ONE_WRITER>' being compiled
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(347,12):
+          see reference to class template instantiation 'sc_core::sc_signal_t<T,sc_core::SC_ONE_WRITER>' being compiled
+          with
+          [
+              T=cpu_trans
+          ]
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(290,1):
+          while compiling class template member function 'void sc_core::sc_signal_t<T,sc_core::SC_ONE_WRITER>::write(const T &)'
+          with
+          [
+              T=cpu_trans
+          ]
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5): error C2679: binary '<<': no operator found which takes a right-hand operand of type 'const T' (or there is no acceptable conversion)
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5): error C2679:         with
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5): error C2679:         [
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5): error C2679:             T=cpu_trans
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5): error C2679:         ]
+  (compiling source file 'AXI_Bus.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(480,39):
+      could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)': cannot convert argument 2 from 'const T' to 'std::basic_streambuf<char,std::char_traits<char>> *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(448,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)': cannot convert argument 2 from 'const T' to 'const void *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(430,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)': cannot convert argument 2 from 'const T' to 'long double'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(412,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)': cannot convert argument 2 from 'const T' to 'double'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(394,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)': cannot convert argument 2 from 'const T' to 'float'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(376,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)': cannot convert argument 2 from 'const T' to 'unsigned __int64'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(358,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)': cannot convert argument 2 from 'const T' to '__int64'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(340,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)': cannot convert argument 2 from 'const T' to 'unsigned long'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(322,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)': cannot convert argument 2 from 'const T' to 'long'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(303,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)': cannot convert argument 2 from 'const T' to 'unsigned int'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(277,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)': cannot convert argument 2 from 'const T' to 'int'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(258,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)': cannot convert argument 2 from 'const T' to 'unsigned short'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(224,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)': cannot convert argument 2 from 'const T' to 'short'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(206,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)': cannot convert argument 2 from 'const T' to 'bool'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(200,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))': cannot convert argument 2 from 'const T' to 'std::ios_base &(__cdecl *)(std::ios_base &)'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(194,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))': cannot convert argument 2 from 'const T' to 'std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &)'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(189,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))': cannot convert argument 2 from 'const T' to 'std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &)'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(140,1):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_signal_channel &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_signal_channel &)': cannot convert argument 2 from 'const T' to 'const sc_core::sc_signal_channel &'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              Reason: cannot convert from 'const T' to 'const sc_core::sc_signal_channel'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\kernel\sc_stage_callback_if.h(68,22):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_stage)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_stage)': cannot convert argument 2 from 'const T' to 'sc_core::sc_stage'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\kernel\sc_time.h(460,1):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_time &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_time &)': cannot convert argument 2 from 'const T' to 'const sc_core::sc_time &'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              Reason: cannot convert from 'const T' to 'const sc_core::sc_time'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\kernel\sc_status.h(59,22):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_status)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_status)': cannot convert argument 2 from 'const T' to 'sc_core::sc_status'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(475,20):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::nullptr_t)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+          'initializing': cannot convert from 'const T' to 'std::nullptr_t'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal_ports.h(1083,17):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_inout<T> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_inout<T> &)': could not deduce template argument for 'const sc_core::sc_inout<T> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal_ports.h(282,17):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_in<T> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_in<T> &)': could not deduce template argument for 'const sc_core::sc_in<T> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstddef(37,27):
+      or       'std::byte std::operator <<(const std::byte,const _IntType) noexcept'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::byte std::operator <<(const std::byte,const _IntType) noexcept': could not deduce template argument for '__formal'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstddef(36,39):
+              'std::enable_if_t<false,int>' : Failed to specialize alias template
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp(1976,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string_view<_Elem,_Traits>)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string_view<_Elem,_Traits>)': could not deduce template argument for 'const std::basic_string_view<_Elem,_Traits>' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(3444,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string<_Elem,_Traits,_Alloc> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string<_Elem,_Traits,_Alloc> &)': could not deduce template argument for 'const std::basic_string<_Elem,_Traits,_Alloc> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(1984,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::shared_ptr<_Ty> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::shared_ptr<_Ty> &)': could not deduce template argument for 'const std::shared_ptr<_Ty> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3792,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::unique_ptr<_Ty2,_Dx2> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::unique_ptr<_Ty2,_Dx2> &)': could not deduce template argument for 'const std::unique_ptr<_Ty2,_Dx2> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(688,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+          'initializing': cannot convert from 'const T' to 'const char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(732,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+          'initializing': cannot convert from 'const T' to 'char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(768,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,const char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+          'initializing': cannot convert from 'const T' to 'const char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(813,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+          'initializing': cannot convert from 'const T' to 'char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(851,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const _Elem *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const _Elem *)': could not deduce template argument for 'const _Elem *' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(894,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,_Elem)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,_Elem)': template parameter '_Elem' is ambiguous
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+              could be 'T'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+              or       'char'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,_Elem)': could not deduce template argument for '_Elem' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(930,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,const signed char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+          'initializing': cannot convert from 'const T' to 'const signed char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(936,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,signed char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+          'initializing': cannot convert from 'const T' to 'signed char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(941,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,const unsigned char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+          'initializing': cannot convert from 'const T' to 'const unsigned char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(947,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,unsigned char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+          'initializing': cannot convert from 'const T' to 'unsigned char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(1005,9):
+      or       '_Ostr &&std::operator <<(_Ostr &&,const _Ty &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+          '_Ostr &&std::operator <<(_Ostr &&,const _Ty &)': could not deduce template argument for '__formal'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(1004,103):
+              '<template-parameter>': you cannot create a pointer to a reference
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(1031,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::error_code &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+          'initializing': cannot convert from 'const T' to 'const std::error_code &'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              Reason: cannot convert from 'const T' to 'const std::error_code'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\thread(251,37):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,std::thread::id)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+          'initializing': cannot convert from 'const T' to 'std::thread::id'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,11):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+      while trying to match the argument list '(std::ostream, const T)'
+          with
+          [
+              T=cpu_trans
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(308,5):
+      the template instantiation context (the oldest one first) is
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(307,1):
+          while compiling class template member function 'void sc_core::sc_signal_t<T,sc_core::SC_ONE_WRITER>::print(std::ostream &) const'
+          with
+          [
+              T=cpu_trans
+          ]
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8): error C2679: binary '<<': no operator found which takes a right-hand operand of type 'const T' (or there is no acceptable conversion)
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8): error C2679:         with
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8): error C2679:         [
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8): error C2679:             T=cpu_trans
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8): error C2679:         ]
+  (compiling source file 'AXI_Bus.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(480,39):
+      could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)': cannot convert argument 2 from 'const T' to 'std::basic_streambuf<char,std::char_traits<char>> *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(448,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)': cannot convert argument 2 from 'const T' to 'const void *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(430,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)': cannot convert argument 2 from 'const T' to 'long double'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(412,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)': cannot convert argument 2 from 'const T' to 'double'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(394,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)': cannot convert argument 2 from 'const T' to 'float'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(376,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)': cannot convert argument 2 from 'const T' to 'unsigned __int64'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(358,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)': cannot convert argument 2 from 'const T' to '__int64'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(340,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)': cannot convert argument 2 from 'const T' to 'unsigned long'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(322,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)': cannot convert argument 2 from 'const T' to 'long'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(303,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)': cannot convert argument 2 from 'const T' to 'unsigned int'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(277,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)': cannot convert argument 2 from 'const T' to 'int'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(258,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)': cannot convert argument 2 from 'const T' to 'unsigned short'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(224,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)': cannot convert argument 2 from 'const T' to 'short'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(206,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)': cannot convert argument 2 from 'const T' to 'bool'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(200,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))': cannot convert argument 2 from 'const T' to 'std::ios_base &(__cdecl *)(std::ios_base &)'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(194,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))': cannot convert argument 2 from 'const T' to 'std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &)'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(189,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))': cannot convert argument 2 from 'const T' to 'std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &)'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(140,1):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_signal_channel &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_signal_channel &)': cannot convert argument 2 from 'const T' to 'const sc_core::sc_signal_channel &'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              Reason: cannot convert from 'const T' to 'const sc_core::sc_signal_channel'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\kernel\sc_stage_callback_if.h(68,22):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_stage)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_stage)': cannot convert argument 2 from 'const T' to 'sc_core::sc_stage'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\kernel\sc_time.h(460,1):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_time &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_time &)': cannot convert argument 2 from 'const T' to 'const sc_core::sc_time &'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              Reason: cannot convert from 'const T' to 'const sc_core::sc_time'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\kernel\sc_status.h(59,22):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_status)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_status)': cannot convert argument 2 from 'const T' to 'sc_core::sc_status'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(475,20):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::nullptr_t)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+          'initializing': cannot convert from 'const T' to 'std::nullptr_t'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal_ports.h(1083,17):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_inout<T> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_inout<T> &)': could not deduce template argument for 'const sc_core::sc_inout<T> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal_ports.h(282,17):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_in<T> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_in<T> &)': could not deduce template argument for 'const sc_core::sc_in<T> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstddef(37,27):
+      or       'std::byte std::operator <<(const std::byte,const _IntType) noexcept'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::byte std::operator <<(const std::byte,const _IntType) noexcept': could not deduce template argument for '__formal'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstddef(36,39):
+              'std::enable_if_t<false,int>' : Failed to specialize alias template
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp(1976,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string_view<_Elem,_Traits>)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string_view<_Elem,_Traits>)': could not deduce template argument for 'const std::basic_string_view<_Elem,_Traits>' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(3444,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string<_Elem,_Traits,_Alloc> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string<_Elem,_Traits,_Alloc> &)': could not deduce template argument for 'const std::basic_string<_Elem,_Traits,_Alloc> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(1984,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::shared_ptr<_Ty> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::shared_ptr<_Ty> &)': could not deduce template argument for 'const std::shared_ptr<_Ty> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3792,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::unique_ptr<_Ty2,_Dx2> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::unique_ptr<_Ty2,_Dx2> &)': could not deduce template argument for 'const std::unique_ptr<_Ty2,_Dx2> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(688,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+          'initializing': cannot convert from 'const T' to 'const char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(732,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+          'initializing': cannot convert from 'const T' to 'char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(768,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,const char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+          'initializing': cannot convert from 'const T' to 'const char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(813,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+          'initializing': cannot convert from 'const T' to 'char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(851,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const _Elem *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const _Elem *)': could not deduce template argument for 'const _Elem *' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(894,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,_Elem)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,_Elem)': template parameter '_Elem' is ambiguous
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+              could be 'T'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+              or       'char'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,_Elem)': could not deduce template argument for '_Elem' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(930,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,const signed char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+          'initializing': cannot convert from 'const T' to 'const signed char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(936,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,signed char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+          'initializing': cannot convert from 'const T' to 'signed char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(941,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,const unsigned char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+          'initializing': cannot convert from 'const T' to 'const unsigned char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(947,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,unsigned char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+          'initializing': cannot convert from 'const T' to 'unsigned char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(1005,9):
+      or       '_Ostr &&std::operator <<(_Ostr &&,const _Ty &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+          '_Ostr &&std::operator <<(_Ostr &&,const _Ty &)': could not deduce template argument for '__formal'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(1004,103):
+              '<template-parameter>': you cannot create a pointer to a reference
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(1031,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::error_code &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+          'initializing': cannot convert from 'const T' to 'const std::error_code &'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              Reason: cannot convert from 'const T' to 'const std::error_code'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\thread(251,37):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,std::thread::id)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+          'initializing': cannot convert from 'const T' to 'std::thread::id'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+      while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, const T)'
+          with
+          [
+              T=cpu_trans
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(316,8):
+      the template instantiation context (the oldest one first) is
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(314,1):
+          while compiling class template member function 'void sc_core::sc_signal_t<T,sc_core::SC_ONE_WRITER>::dump(std::ostream &) const'
+          with
+          [
+              T=cpu_trans
+          ]
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8): error C2679: binary '<<': no operator found which takes a right-hand operand of type 'const T' (or there is no acceptable conversion)
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8): error C2679:         with
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8): error C2679:         [
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8): error C2679:             T=cpu_trans
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8): error C2679:         ]
+  (compiling source file 'AXI_Bus.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(480,39):
+      could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)': cannot convert argument 2 from 'const T' to 'std::basic_streambuf<char,std::char_traits<char>> *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(448,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)': cannot convert argument 2 from 'const T' to 'const void *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(430,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)': cannot convert argument 2 from 'const T' to 'long double'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(412,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)': cannot convert argument 2 from 'const T' to 'double'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(394,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)': cannot convert argument 2 from 'const T' to 'float'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(376,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)': cannot convert argument 2 from 'const T' to 'unsigned __int64'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(358,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)': cannot convert argument 2 from 'const T' to '__int64'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(340,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)': cannot convert argument 2 from 'const T' to 'unsigned long'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(322,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)': cannot convert argument 2 from 'const T' to 'long'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(303,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)': cannot convert argument 2 from 'const T' to 'unsigned int'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(277,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)': cannot convert argument 2 from 'const T' to 'int'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(258,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)': cannot convert argument 2 from 'const T' to 'unsigned short'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(224,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)': cannot convert argument 2 from 'const T' to 'short'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(206,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)': cannot convert argument 2 from 'const T' to 'bool'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(200,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))': cannot convert argument 2 from 'const T' to 'std::ios_base &(__cdecl *)(std::ios_base &)'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(194,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))': cannot convert argument 2 from 'const T' to 'std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &)'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(189,39):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))': cannot convert argument 2 from 'const T' to 'std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &)'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(140,1):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_signal_channel &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_signal_channel &)': cannot convert argument 2 from 'const T' to 'const sc_core::sc_signal_channel &'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              Reason: cannot convert from 'const T' to 'const sc_core::sc_signal_channel'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\kernel\sc_stage_callback_if.h(68,22):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_stage)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_stage)': cannot convert argument 2 from 'const T' to 'sc_core::sc_stage'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\kernel\sc_time.h(460,1):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_time &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_time &)': cannot convert argument 2 from 'const T' to 'const sc_core::sc_time &'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              Reason: cannot convert from 'const T' to 'const sc_core::sc_time'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\kernel\sc_status.h(59,22):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_status)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,sc_core::sc_status)': cannot convert argument 2 from 'const T' to 'sc_core::sc_status'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(475,20):
+      or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::nullptr_t)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+          'initializing': cannot convert from 'const T' to 'std::nullptr_t'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal_ports.h(1083,17):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_inout<T> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_inout<T> &)': could not deduce template argument for 'const sc_core::sc_inout<T> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal_ports.h(282,17):
+      or       'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_in<T> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::ostream &sc_core::operator <<(std::ostream &,const sc_core::sc_in<T> &)': could not deduce template argument for 'const sc_core::sc_in<T> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstddef(37,27):
+      or       'std::byte std::operator <<(const std::byte,const _IntType) noexcept'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::byte std::operator <<(const std::byte,const _IntType) noexcept': could not deduce template argument for '__formal'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstddef(36,39):
+              'std::enable_if_t<false,int>' : Failed to specialize alias template
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp(1976,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string_view<_Elem,_Traits>)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string_view<_Elem,_Traits>)': could not deduce template argument for 'const std::basic_string_view<_Elem,_Traits>' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(3444,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string<_Elem,_Traits,_Alloc> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::basic_string<_Elem,_Traits,_Alloc> &)': could not deduce template argument for 'const std::basic_string<_Elem,_Traits,_Alloc> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(1984,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::shared_ptr<_Ty> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::shared_ptr<_Ty> &)': could not deduce template argument for 'const std::shared_ptr<_Ty> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3792,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::unique_ptr<_Ty2,_Dx2> &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::unique_ptr<_Ty2,_Dx2> &)': could not deduce template argument for 'const std::unique_ptr<_Ty2,_Dx2> &' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(688,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+          'initializing': cannot convert from 'const T' to 'const char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(732,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+          'initializing': cannot convert from 'const T' to 'char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(768,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,const char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+          'initializing': cannot convert from 'const T' to 'const char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(813,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+          'initializing': cannot convert from 'const T' to 'char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(851,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const _Elem *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const _Elem *)': could not deduce template argument for 'const _Elem *' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(894,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,_Elem)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,_Elem)': template parameter '_Elem' is ambiguous
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+              could be 'T'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+              or       'char'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,_Elem)': could not deduce template argument for '_Elem' from 'const T'
+          with
+          [
+              T=cpu_trans
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(930,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,const signed char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+          'initializing': cannot convert from 'const T' to 'const signed char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(936,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,signed char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+          'initializing': cannot convert from 'const T' to 'signed char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(941,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,const unsigned char *)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+          'initializing': cannot convert from 'const T' to 'const unsigned char *'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(947,31):
+      or       'std::basic_ostream<char,_Traits> &std::operator <<(std::basic_ostream<char,_Traits> &,unsigned char)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+          'initializing': cannot convert from 'const T' to 'unsigned char'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(1005,9):
+      or       '_Ostr &&std::operator <<(_Ostr &&,const _Ty &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+          '_Ostr &&std::operator <<(_Ostr &&,const _Ty &)': could not deduce template argument for '__formal'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(1004,103):
+              '<template-parameter>': you cannot create a pointer to a reference
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp(1031,32):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,const std::error_code &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+          'initializing': cannot convert from 'const T' to 'const std::error_code &'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              Reason: cannot convert from 'const T' to 'const std::error_code'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\thread(251,37):
+      or       'std::basic_ostream<_Elem,_Traits> &std::operator <<(std::basic_ostream<_Elem,_Traits> &,std::thread::id)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+          'initializing': cannot convert from 'const T' to 'std::thread::id'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(317,8):
+      while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, const T)'
+          with
+          [
+              T=cpu_trans
+          ]
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(326,12): error C2678: binary '==': no operator found which takes a left-hand operand of type 'T' (or there is no acceptable conversion)
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(326,12): error C2678:         with
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(326,12): error C2678:         [
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(326,12): error C2678:             T=cpu_trans
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(326,12): error C2678:         ]
+  (compiling source file 'AXI_Bus.cpp')
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\kernel\sc_process_handle.h(155,13):
+      could be 'bool sc_core::operator ==(const sc_core::sc_process_handle &,const sc_core::sc_process_handle &)'
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(326,12):
+          'bool sc_core::operator ==(const sc_core::sc_process_handle &,const sc_core::sc_process_handle &)': cannot convert argument 1 from 'T' to 'const sc_core::sc_process_handle &'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(326,12):
+              Reason: cannot convert from 'T' to 'const sc_core::sc_process_handle'
+          with
+          [
+              T=cpu_trans
+          ]
+              E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(326,12):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(326,12):
+      while trying to match the argument list '(T, T)'
+          with
+          [
+              T=cpu_trans
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(326,12):
+      the template instantiation context (the oldest one first) is
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_signal.h(324,1):
+          while compiling class template member function 'void sc_core::sc_signal_t<T,sc_core::SC_ONE_WRITER>::update(void)'
+          with
+          [
+              T=cpu_trans
+          ]
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(219,68): error C2039: 'tlm_payload_type': is not a member of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  (compiling source file 'AXI_Bus.cpp')
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(205,7):
+      see declaration of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(219,68):
+      the template instantiation context (the oldest one first) is
+          E:\My_Stuff\prep\systemc_projects\AXI_Bus\AXI_Bus.hpp(4,60):
+          see reference to class template instantiation 'tlm::tlm_target_socket<32,tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>,1,sc_core::SC_ONE_OR_MORE_BOUND>' being compiled
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_sockets\tlm_target_socket.h(219,10):
+          see reference to class template instantiation 'tlm::tlm_base_target_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>' being compiled
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_sockets\tlm_target_socket.h(61,39):
+          see reference to class template instantiation 'tlm::tlm_base_target_socket_b<32,FW_IF,BW_IF>' being compiled
+          with
+          [
+              FW_IF=tlm::tlm_fw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>,
+              BW_IF=tlm::tlm_bw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>
+          ]
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_sockets\tlm_target_socket.h(39,45):
+          see reference to class template instantiation 'sc_core::sc_port_b<BW_IF>' being compiled
+          with
+          [
+              BW_IF=tlm::tlm_bw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>
+          ]
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_port.h(573,1):
+          while compiling class template member function 'std::type_index sc_core::sc_port_b<BW_IF>::get_interface_type(void) const'
+          with
+          [
+              BW_IF=tlm::tlm_bw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>
+          ]
+          E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\sysc\communication\sc_port.h(574,20):
+          see reference to class template instantiation 'tlm::tlm_bw_transport_if<TYPES>' being compiled
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(219,68): error C2146: syntax error: missing '>' before identifier 'tlm_payload_type'
+  (compiling source file 'AXI_Bus.cpp')
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(220,68): error C2039: 'tlm_phase_type': is not a member of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  (compiling source file 'AXI_Bus.cpp')
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(205,7):
+      see declaration of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(219,20): error C3770: '<error type>': is not a valid base class
+  (compiling source file 'AXI_Bus.cpp')
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(206,68): error C2039: 'tlm_payload_type': is not a member of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  (compiling source file 'Cpu.cpp')
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(205,7):
+      see declaration of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(206,68):
+      the template instantiation context (the oldest one first) is
+          E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.cpp(20,3):
+          see reference to class template instantiation 'tlm::tlm_fw_transport_if<TYPES>' being compiled
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(206,68): error C2146: syntax error: missing '>' before identifier 'tlm_payload_type'
+  (compiling source file 'Cpu.cpp')
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(207,68): error C2039: 'tlm_phase_type': is not a member of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  (compiling source file 'Cpu.cpp')
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(205,7):
+      see declaration of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(206,20): error C3770: '<error type>': is not a valid base class
+  (compiling source file 'Cpu.cpp')
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(208,62): error C2039: 'tlm_payload_type': is not a member of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  (compiling source file 'Cpu.cpp')
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(205,7):
+      see declaration of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(208,62): error C2146: syntax error: missing '>' before identifier 'tlm_payload_type'
+  (compiling source file 'Cpu.cpp')
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(208,20): error C3770: '<error type>': is not a valid base class
+  (compiling source file 'Cpu.cpp')
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(209,57): error C2039: 'tlm_payload_type': is not a member of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  (compiling source file 'Cpu.cpp')
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(205,7):
+      see declaration of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(209,57): error C2146: syntax error: missing '>' before identifier 'tlm_payload_type'
+  (compiling source file 'Cpu.cpp')
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(209,20): error C3770: '<error type>': is not a valid base class
+  (compiling source file 'Cpu.cpp')
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(210,57): error C2039: 'tlm_payload_type': is not a member of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  (compiling source file 'Cpu.cpp')
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(205,7):
+      see declaration of 'tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>'
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(210,57): error C2146: syntax error: missing '>' before identifier 'tlm_payload_type'
+  (compiling source file 'Cpu.cpp')
+  
+E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(210,20): error C3770: '<error type>': is not a valid base class
+  (compiling source file 'Cpu.cpp')
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.cpp(20,19): error C2039: 'b_transport': is not a member of 'tlm::tlm_fw_transport_if<TYPES>'
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.cpp(20,19): error C2039:         with
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.cpp(20,19): error C2039:         [
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.cpp(20,19): error C2039:             TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.cpp(20,19): error C2039:         ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(205,7):
+      see declaration of 'tlm::tlm_fw_transport_if<TYPES>'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.cpp(40,19): error C2039: 'b_transport': is not a member of 'tlm::tlm_fw_transport_if<TYPES>'
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.cpp(40,19): error C2039:         with
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.cpp(40,19): error C2039:         [
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.cpp(40,19): error C2039:             TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.cpp(40,19): error C2039:         ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(205,7):
+      see declaration of 'tlm::tlm_fw_transport_if<TYPES>'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+  
+  main.cpp
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(8,42): error C2086: 'sc_core::sc_signal<burst_type,sc_core::SC_ONE_WRITER> ARBURST': redefinition
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(8,33):
+      see declaration of 'ARBURST'
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(9,52): error C2371: 'ARADDR': redefinition; different basic types
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(6,37):
+      see declaration of 'ARADDR'
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(11,10): error C2259: 'AXI_Bus': cannot instantiate abstract class
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\AXI_Bus.hpp(2,8):
+      see declaration of 'AXI_Bus'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(11,10):
+      due to following members:
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(11,10):
+      'tlm::tlm_sync_enum tlm::tlm_fw_nonblocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type,tlm::tlm_base_protocol_types::tlm_phase_type>::nb_transport_fw(TRANS &,PHASE &,sc_core::sc_time &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type,
+              PHASE=tlm::tlm_base_protocol_types::tlm_phase_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(38,25):
+      see declaration of 'tlm::tlm_fw_nonblocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type,tlm::tlm_base_protocol_types::tlm_phase_type>::nb_transport_fw'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(11,10):
+      'bool tlm::tlm_fw_direct_mem_if<tlm::tlm_base_protocol_types::tlm_payload_type>::get_direct_mem_ptr(TRANS &,tlm::tlm_dmi &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(122,16):
+      see declaration of 'tlm::tlm_fw_direct_mem_if<tlm::tlm_base_protocol_types::tlm_payload_type>::get_direct_mem_ptr'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(11,10):
+      'unsigned int tlm::tlm_transport_dbg_if<tlm::tlm_base_protocol_types::tlm_payload_type>::transport_dbg(TRANS &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(190,24):
+      see declaration of 'tlm::tlm_transport_dbg_if<tlm::tlm_base_protocol_types::tlm_payload_type>::transport_dbg'
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(11,17): error C2259: 'AXI_Bus': cannot instantiate abstract class
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\AXI_Bus.hpp(2,8):
+      see declaration of 'AXI_Bus'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(11,17):
+      due to following members:
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(11,17):
+      'tlm::tlm_sync_enum tlm::tlm_fw_nonblocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type,tlm::tlm_base_protocol_types::tlm_phase_type>::nb_transport_fw(TRANS &,PHASE &,sc_core::sc_time &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type,
+              PHASE=tlm::tlm_base_protocol_types::tlm_phase_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(38,25):
+      see declaration of 'tlm::tlm_fw_nonblocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type,tlm::tlm_base_protocol_types::tlm_phase_type>::nb_transport_fw'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(11,17):
+      'bool tlm::tlm_fw_direct_mem_if<tlm::tlm_base_protocol_types::tlm_payload_type>::get_direct_mem_ptr(TRANS &,tlm::tlm_dmi &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(122,16):
+      see declaration of 'tlm::tlm_fw_direct_mem_if<tlm::tlm_base_protocol_types::tlm_payload_type>::get_direct_mem_ptr'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(11,17):
+      'unsigned int tlm::tlm_transport_dbg_if<tlm::tlm_base_protocol_types::tlm_payload_type>::transport_dbg(TRANS &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(190,24):
+      see declaration of 'tlm::tlm_transport_dbg_if<tlm::tlm_base_protocol_types::tlm_payload_type>::transport_dbg'
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,6): error C2259: 'Cpu': cannot instantiate abstract class
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.hpp(2,8):
+      see declaration of 'Cpu'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,6):
+      due to following members:
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,6):
+      'tlm::tlm_sync_enum tlm::tlm_fw_nonblocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type,tlm::tlm_base_protocol_types::tlm_phase_type>::nb_transport_fw(TRANS &,PHASE &,sc_core::sc_time &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type,
+              PHASE=tlm::tlm_base_protocol_types::tlm_phase_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(38,25):
+      see declaration of 'tlm::tlm_fw_nonblocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type,tlm::tlm_base_protocol_types::tlm_phase_type>::nb_transport_fw'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,6):
+      'void tlm::tlm_blocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type>::b_transport(TRANS &,sc_core::sc_time &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(55,16):
+      see declaration of 'tlm::tlm_blocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type>::b_transport'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,6):
+      'bool tlm::tlm_fw_direct_mem_if<tlm::tlm_base_protocol_types::tlm_payload_type>::get_direct_mem_ptr(TRANS &,tlm::tlm_dmi &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(122,16):
+      see declaration of 'tlm::tlm_fw_direct_mem_if<tlm::tlm_base_protocol_types::tlm_payload_type>::get_direct_mem_ptr'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,6):
+      'unsigned int tlm::tlm_transport_dbg_if<tlm::tlm_base_protocol_types::tlm_payload_type>::transport_dbg(TRANS &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(190,24):
+      see declaration of 'tlm::tlm_transport_dbg_if<tlm::tlm_base_protocol_types::tlm_payload_type>::transport_dbg'
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,9): error C2259: 'Cpu': cannot instantiate abstract class
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\Cpu.hpp(2,8):
+      see declaration of 'Cpu'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,9):
+      due to following members:
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,9):
+      'tlm::tlm_sync_enum tlm::tlm_fw_nonblocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type,tlm::tlm_base_protocol_types::tlm_phase_type>::nb_transport_fw(TRANS &,PHASE &,sc_core::sc_time &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type,
+              PHASE=tlm::tlm_base_protocol_types::tlm_phase_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(38,25):
+      see declaration of 'tlm::tlm_fw_nonblocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type,tlm::tlm_base_protocol_types::tlm_phase_type>::nb_transport_fw'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,9):
+      'void tlm::tlm_blocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type>::b_transport(TRANS &,sc_core::sc_time &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(55,16):
+      see declaration of 'tlm::tlm_blocking_transport_if<tlm::tlm_base_protocol_types::tlm_payload_type>::b_transport'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,9):
+      'bool tlm::tlm_fw_direct_mem_if<tlm::tlm_base_protocol_types::tlm_payload_type>::get_direct_mem_ptr(TRANS &,tlm::tlm_dmi &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(122,16):
+      see declaration of 'tlm::tlm_fw_direct_mem_if<tlm::tlm_base_protocol_types::tlm_payload_type>::get_direct_mem_ptr'
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(12,9):
+      'unsigned int tlm::tlm_transport_dbg_if<tlm::tlm_base_protocol_types::tlm_payload_type>::transport_dbg(TRANS &)': is abstract
+          with
+          [
+              TRANS=tlm::tlm_base_protocol_types::tlm_payload_type
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_2_interfaces\tlm_fw_bw_ifs.h(190,24):
+      see declaration of 'tlm::tlm_transport_dbg_if<tlm::tlm_base_protocol_types::tlm_payload_type>::transport_dbg'
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(16,5): error C2665: 'tlm::tlm_base_initiator_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()': no overloaded function could convert all the argument types
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(16,5): error C2665:         with
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(16,5): error C2665:         [
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(16,5): error C2665:             TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(16,5): error C2665:         ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_sockets\tlm_initiator_socket.h(121,8):
+      could be 'void tlm::tlm_base_initiator_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_base_target_socket_b<32,FW_IF,BW_IF> &)'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>,
+              FW_IF=tlm::tlm_fw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>,
+              BW_IF=tlm::tlm_bw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>
+          ]
+          E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(16,5):
+          'void tlm::tlm_base_initiator_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_base_target_socket_b<32,FW_IF,BW_IF> &)': cannot convert argument 1 from 'sc_core::sc_signal<cpu_trans,sc_core::SC_ONE_WRITER>' to 'tlm::tlm_base_target_socket_b<32,FW_IF,BW_IF> &'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>,
+              FW_IF=tlm::tlm_fw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>,
+              BW_IF=tlm::tlm_bw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>
+          ]
+          and
+          [
+              FW_IF=tlm::tlm_fw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>,
+              BW_IF=tlm::tlm_bw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_sockets\tlm_initiator_socket.h(138,8):
+      or       'void tlm::tlm_base_initiator_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_base_initiator_socket_b<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>> &)'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+          E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(16,5):
+          'void tlm::tlm_base_initiator_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_base_initiator_socket_b<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>> &)': cannot convert argument 1 from 'sc_core::sc_signal<cpu_trans,sc_core::SC_ONE_WRITER>' to 'tlm::tlm_base_initiator_socket_b<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>> &'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_sockets\tlm_initiator_socket.h(152,8):
+      or       'void tlm::tlm_base_initiator_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_bw_transport_if<TYPES> &)'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+          E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(16,5):
+          'void tlm::tlm_base_initiator_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_bw_transport_if<TYPES> &)': cannot convert argument 1 from 'sc_core::sc_signal<cpu_trans,sc_core::SC_ONE_WRITER>' to 'tlm::tlm_bw_transport_if<TYPES> &'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(16,5):
+      while trying to match the argument list '(sc_core::sc_signal<cpu_trans,sc_core::SC_ONE_WRITER>)'
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(17,9): error C2665: 'tlm::tlm_base_target_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()': no overloaded function could convert all the argument types
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(17,9): error C2665:         with
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(17,9): error C2665:         [
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(17,9): error C2665:             TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(17,9): error C2665:         ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_sockets\tlm_target_socket.h(114,8):
+      could be 'void tlm::tlm_base_target_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_base_initiator_socket_b<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>> &)'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+          E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(17,9):
+          'void tlm::tlm_base_target_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_base_initiator_socket_b<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>> &)': cannot convert argument 1 from 'sc_core::sc_signal<cpu_trans,sc_core::SC_ONE_WRITER>' to 'tlm::tlm_base_initiator_socket_b<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>> &'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_sockets\tlm_target_socket.h(131,8):
+      or       'void tlm::tlm_base_target_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_base_target_socket_b<32,FW_IF,BW_IF> &)'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>,
+              FW_IF=tlm::tlm_fw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>,
+              BW_IF=tlm::tlm_bw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>
+          ]
+          E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(17,9):
+          'void tlm::tlm_base_target_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_base_target_socket_b<32,FW_IF,BW_IF> &)': cannot convert argument 1 from 'sc_core::sc_signal<cpu_trans,sc_core::SC_ONE_WRITER>' to 'tlm::tlm_base_target_socket_b<32,FW_IF,BW_IF> &'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>,
+              FW_IF=tlm::tlm_fw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>,
+              BW_IF=tlm::tlm_bw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>
+          ]
+          and
+          [
+              FW_IF=tlm::tlm_fw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>,
+              BW_IF=tlm::tlm_bw_transport_if<tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>>
+          ]
+      E:\My_Stuff\prep\System_C\systemc-3.0.1\systemc-3.0.1\src\tlm_core\tlm_2\tlm_sockets\tlm_target_socket.h(150,8):
+      or       'void tlm::tlm_base_target_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_fw_transport_if<TYPES> &)'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+          E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(17,9):
+          'void tlm::tlm_base_target_socket<32,tlm::tlm_fw_transport_if<TYPES>,tlm::tlm_bw_transport_if<TYPES>,1,sc_core::SC_ONE_OR_MORE_BOUND>::operator ()(tlm::tlm_fw_transport_if<TYPES> &)': cannot convert argument 1 from 'sc_core::sc_signal<cpu_trans,sc_core::SC_ONE_WRITER>' to 'tlm::tlm_fw_transport_if<TYPES> &'
+          with
+          [
+              TYPES=tlm::tlm_fw_transport_if<tlm::tlm_base_protocol_types>
+          ]
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\main.cpp(17,9):
+      while trying to match the argument list '(sc_core::sc_signal<cpu_trans,sc_core::SC_ONE_WRITER>)'
+  
+  RAM.cpp
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\RAM.cpp(22,26): warning C4805: '==': unsafe mix of type 'const unsigned char' and type 'bool' in operation
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\RAM.cpp(67,12): error C2371: 'len': redefinition; different basic types
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\RAM.cpp(18,11):
+      see declaration of 'len'
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\RAM.cpp(68,12): error C2374: 'address': redefinition; multiple initialization
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\RAM.cpp(17,12):
+      see declaration of 'address'
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\RAM.cpp(68,12): error C2086: 'uint32_t address': redefinition
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\RAM.cpp(17,12):
+      see declaration of 'address'
+  
+E:\My_Stuff\prep\systemc_projects\AXI_Bus\RAM.cpp(69,12): error C2371: 'burst': redefinition; different basic types
+      E:\My_Stuff\prep\systemc_projects\AXI_Bus\RAM.cpp(19,14):
+      see declaration of 'burst'
+  
+  Generating Code...
