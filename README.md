@@ -31,10 +31,10 @@ A SystemC implementation of a RISC-V processor capable of executing instructions
 
 #### AXI Bus
 
-A SystemC model of an AXI4 interconnect that receives transactions from the RISC-V CPU and performs address decoding and transaction routing.
+A SystemC model of an AXI interconnect that receives transactions from the RISC-V CPU and performs address decoding and transaction routing.
 
 **Features**
-- AXI4 protocol modeling
+- AXI protocol modeling
 - Read/Write channels
 - Address decoding
 - Transaction routing
