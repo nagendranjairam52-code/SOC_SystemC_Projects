@@ -1,0 +1,13 @@
+# Visual Studio
+.vs/
+*.VC.db
+*.ipch
+
+# Build output
+Debug/
+Release/
+x64/
+x86/
+
+# Visual Studio Code
+.vscode/
